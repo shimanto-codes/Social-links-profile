@@ -30,11 +30,13 @@ body{
   font-size: var(--ff-size);
 }
 .card_body{
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   background-color: var(--Grey800);
   text-align: center;
   border-radius: 10px;
   padding: 30px;
+  margin: 0 auto;
 }
 img{
   width: 100%;
@@ -82,4 +84,9 @@ img{
 .linkes a:active{
   background-color: var(--Green);
   color: var(--Grey900);
+}
+@media screen and (max-width:400px) {
+  .card_body{
+    max-width: 90%;
+  }
 }
