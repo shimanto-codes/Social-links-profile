@@ -1,0 +1,85 @@
+:root{
+  /*color*/
+  --Green: hsl(75, 94%, 57%);
+
+  --White: hsl(0, 0%, 100%);
+
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+  /*font*/
+  --ff-main: "Inter", sans-serif;
+  --ff-size:14px    
+}
+
+*, ::after, ::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Grey900);
+  font-family: var(--ff-main);
+  font-size: var(--ff-size);
+}
+.card_body{
+  width: 350px;
+  background-color: var(--Grey800);
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+}
+img{
+  width: 100%;
+}
+.image_holder img{
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+.head_content h1{
+  font-size: 32px;
+  color: var(--White);
+  padding-bottom: 10px;
+}
+.head_content h6, p{
+  font-size: var(--ff-size);
+  padding-bottom: 25px;
+}
+.head_content h6{
+  color: var(--Green);
+}
+.head_content p{
+  color: var(--White);
+  opacity: 0.7;
+}
+.linkes{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.linkes a{
+  display: block;
+  text-decoration: none;
+  background-color: var(--Grey700);
+  color:var(--White);
+  padding: 15px;
+  border-radius: 8px;
+}
+.linkes a:hover{
+  background-color: var(--Green);
+  color: var(--Grey900);
+}
+.linkes a:active{
+  background-color: var(--Green);
+  color: var(--Grey900);
+}
